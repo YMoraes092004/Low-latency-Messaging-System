@@ -28,6 +28,28 @@ This project focuses on achieving real-time message transmission with minimal la
 * Measure and optimize for low-latency constraints
 * Gain experience building systems similar to those used in high-frequency trading
 
+### TCP
+Terminal A:
+  ./bin/tcp_server
+
+Terminal B:
+  ./bin/tcp_client
+  # Sample:
+  # [TCP] Sent 1000/10000  Last RTT(µs): 21
+  # ...
+  # [TCP] Sent 10000/10000 Last RTT(µs): 29
+
+### UDP
+Terminal A:
+  ./bin/udp_server
+
+Terminal B:
+  ./bin/udp_client
+  # Sample:
+  # [UDP] Sent 1000/10000  Last RTT(µs): 26
+  # ...
+  # [UDP] Sent 10000/10000 Last RTT(µs): 26
+
 ## Authors
 
 * Yohann A. Moraes
